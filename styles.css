@@ -1,0 +1,346 @@
+.body {
+  background-color: #963499;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #963499;
+}
+
+/*-----------------------SIDEBAR----------------------*/
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  /*min-height nos sirve para que el margen inferior 
+  se ajuste a la pantalla del dispositivo(del viewport)*/
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /*conseguimos que la sidebar no se deforme, 
+                   de tal forma que se adapta el feed a ella*/
+  position: sticky; /* Logramos que la barra lateral se quede fija para simular el scroll*/
+  top: 0;
+  height: 100vh;
+}
+
+.sidebarlogo {
+  margin-top: 10px;
+  margin-left: 6%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.sidebarlogo h1 {
+  color: whitesmoke;
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  /*Esto lo sacamos de google fonts*/
+}
+
+.logoinsta {
+  width: 80px;
+  height: auto;
+}
+
+/* -----------------------------A partir de aqui ponemos la estructura de los apartados del menu*/
+
+/* ----------------------- DM'S-------------------*/
+.messages {
+  display: flex;
+  gap: 10px;
+  margin-left: 13%;
+  margin-bottom: 30px;
+}
+.messages-icon {
+  width: 40px;
+  height: auto;
+}
+.messages-text {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.messages-text:hover {
+  color: rgb(205, 43, 226);
+}
+
+/*--------------------------------------------------------*/
+
+/* --------------------SEARCH-------------------*/
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-left: 13%;
+  margin-bottom: 30px;
+}
+
+.search-icon {
+  width: 40px;
+  height: auto;
+}
+
+.search-text {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.search-text:hover {
+  color: rgb(205, 43, 226);
+}
+
+/*--------------------------------------------------------*/
+
+/* -----------------------NOTIFICACIONES-------------------*/
+
+.notif {
+  display: flex;
+  gap: 10px;
+  margin-left: 13%;
+  margin-bottom: 30px;
+}
+
+.notif-icon {
+  width: 40px;
+  height: auto;
+}
+
+.notif-text {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.notif-text:hover {
+  color: rgb(205, 43, 226);
+}
+
+/*--------------------------------------------------------*/
+
+/* -----------------------EXPLORA-------------------*/
+.explore {
+  display: flex;
+  gap: 10px;
+  margin-left: 13%;
+  margin-bottom: 30px;
+}
+
+.explore-icon {
+  width: 44px;
+  height: auto;
+}
+
+.explore-text {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.explore-text:hover {
+  color: rgb(205, 43, 226);
+}
+/*--------------------------------------------------------*/
+
+/*----------------------HOME------------------------------*/
+
+.home {
+  display: flex;
+  gap: 10px;
+  margin-left: 13%;
+  margin-bottom: 30px;
+}
+
+.home-icon {
+  width: 40px;
+  height: auto;
+}
+
+.home-text {
+  color: rgb(205, 43, 226);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.home-text:hover {
+  color: rgb(205, 43, 226);
+}
+
+/*--------------------------------------------------------*/
+
+/*--------------------PROFILE----------------------*/
+
+.profile {
+  display: flex;
+  gap: 10px;
+  margin-left: 11%;
+  margin-bottom: 30px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-text {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.profile-text:hover {
+  color: rgb(205, 43, 226);
+}
+
+.author {
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  margin-left: 30px;
+}
+
+.author:hover {
+  color: darkgreen;
+}
+
+/*--------------------------------------------------------*/
+
+/*--------------------------FEED--------------------------*/
+/*-----------------------FEED-HOME--------------------------*/
+
+.feedhome {
+  padding-top: 60px;
+  background-color: rgb(37, 37, 37);
+  width: 100%;
+  margin-left: 20px;
+}
+
+.postsettings {
+  margin-left: 25%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.postmedia {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+  width: 55%;
+}
+
+.posthome {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.postheader {
+  background-color: black;
+  width: 100%;
+}
+
+.userlabel {
+  display: flex;
+  height: 60px;
+  gap: 10px;
+}
+
+.logopost {
+  border-radius: 40%;
+  padding-left: 10px;
+
+  width: 50px;
+}
+
+.usuarioshome {
+  font-size: 18px;
+  color: whitesmoke;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.fotoshome {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.postfooter {
+  background-color: rgb(26, 25, 25);
+  width: 100%;
+  padding: 10px;
+
+  justify-content: space-between;
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.footer {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  text-align: left;
+}
+
+.posticons {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.posticons img {
+  width: 30px;
+}
+
+.save {
+  width: 30px; /* Ajusta el tamaño del icono de guardar */
+  height: 30px; /* Ajusta el tamaño del icono de guardar */
+  margin-left: 60%;
+}
+
+/*-------------------------------------topbar buscador-----------------------*/
+
+.explorecontainer {
+  width: 100%;
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.topbar {
+  display: flex;
+  gap: 15px;
+  width: 98%;
+  margin-left: 20px;
+  background-color: rgb(37, 37, 37);
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+.buscador {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 5px;
+  margin-right: 100px;
+}
+
+.lupabuscador {
+  width: 40px;
+  border-radius: 3px;
+}
+
+.buscar-input {
+  background-color: rgb(211, 211, 211);
+  width: 25%;
+  margin-right: 10px;
+}

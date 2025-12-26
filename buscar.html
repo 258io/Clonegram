@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Clonegram</title>
+
+    <!--icono del title-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!------ fuente de google  (sacada de https://fonts.google.com/)------>
+    <!-- esta fuente se aplicara a la clase "sidebarlogo h1"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!------------------archivo css --------------------->
+    <link rel="stylesheet" href="buscar.css" />
+  </head>
+
+  <body class="body">
+    <div class="container">
+      <!------------------------------- barra lateral------------------------->
+      <aside class="sidebar">
+        <!--aqui va el logo superior de la barra lateral-->
+        <div class="sidebarlogo">
+          <img src="insta.png" class="logoinsta" />
+          <h1>Clonegram</h1>
+        </div>
+
+        <!--aqui va el menu con los subapartados de "buscar, dm, profile etc". 
+        Dejamos "href=" con una almohadilla para posteriormente indexar otro .html-->
+        <nav class="sidebarmenu">
+          <!--subapartado de DM'S-->
+          <a href="#" class="messages">
+            <img src="send.png" class="messages-icon" />
+            <span class="messages-text"> Messages </span>
+          </a>
+          <!--subapartado de buscar-->
+          <a href="buscar.html" class="search">
+            <img src="lupa.png" class="search-icon" />
+            <span class="search-text">Buscar</span>
+          </a>
+          <!--subapartado de notificaciones-->
+          <a href="#" class="notif">
+            <img src="heart.png" class="notif-icon" />
+            <span class="notif-text">Notificaciones</span>
+          </a>
+
+          <!--subapartado de explora-->
+          <a href="explore.html" class="explore">
+            <img src="explore.png" class="explore-icon" />
+            <span class="explore-text">Explore</span>
+          </a>
+
+          <!-- Aqui va el subapartado de home-->
+          <a href="index.html" class="home">
+            <img src="home.png" class="home-icon" />
+            <span class="home-text"> Home </span>
+          </a>
+
+          <!--Aqui va el subapartado de profile-->
+          <a href="#" class="profile">
+            <img src="profile.jpg" class="profile-icon" />
+            <span class="profile-text"> Profile </span>
+          </a>
+        </nav>
+      </aside>
+
+
+
+
+
+
+          <!------------------------------------FEED_BUSCAR----------------------------------->
+
+    <div class="explorecontainer">
+          <!--Aqui ponemos el banner y la barra de busqueda debajo-->
+
+
+      <div class="containerbuscar">
+        <div class="banner">
+        <img src="insta.png" class="imagenclonegram">
+        <h1 class="clonegram"> Clonegram </h1>
+        </div>
+    
+      </div>
+        
+
+      <div class="topbar">
+        <div class="buscador">
+          <img src="lupa.png" class="lupabuscador" />
+          <input type="text" ; placeholder="buscar" ; class="buscar-input" />
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
